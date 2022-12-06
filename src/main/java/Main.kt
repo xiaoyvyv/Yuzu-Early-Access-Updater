@@ -235,7 +235,7 @@ class DesktopApplication : CoroutineScope by MainScope() {
 
                     // 解压
                     val time = System.currentTimeMillis()
-                    val newZipFile = File(zipDir).listFiles()?.minByOrNull { it.lastModified() }
+                    val newZipFile = File(zipDir).listFiles()?.maxByOrNull { it.lastModified() }
                     ZipUtils.unzipFile(newZipFile, dataDir)
                     println("解压耗时：${System.currentTimeMillis() - time} ms")
 

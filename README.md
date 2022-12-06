@@ -23,3 +23,4 @@ Yuzu Early Access Updater
 > `packageDeb` | `packageDmg` | `packageMsi`
 
 ![pic_build.png](./pic/pic_build.png)
+
