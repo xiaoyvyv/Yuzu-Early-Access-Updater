@@ -10,7 +10,7 @@ plugins {
 }
 
 group = "com.xiaoyv"
-version = "1.0"
+version = "1.0.1"
 
 repositories {
     google()
@@ -35,7 +35,7 @@ compose.desktop {
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "YuzuUpdater"
-            packageVersion = "1.0.0"
+            packageVersion = "1.0.1"
             copyright = "© 2022 xiaoyvyv. All rights reserved."
             vendor = "xiaoyvyv@github.com"
 

@@ -91,7 +91,7 @@ object CharByteKit {
             val file = File(targetDirectory, fileName)
 
             // 本地文件已经存在
-            if (file.exists() && file.isFile && file.length() == length) {
+            if (file.exists() && file.isFile && file.length() > 1024 * 1024 * 50) {
                 onProgress.invoke(1f, length, length)
                 return true
             }
